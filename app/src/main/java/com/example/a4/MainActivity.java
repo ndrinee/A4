@@ -4,7 +4,7 @@ package com.example.a4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
+// ndrine
 public class MainActivity extends AppCompatActivity {
 
     @Override
