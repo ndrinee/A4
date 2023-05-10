@@ -11,7 +11,7 @@ public class Fonction {
 
         Class.forName("com.mysql.jdbc.driver");
         Connexion conn = DriverManager.getConnection(url,user,pass);
-        Statement st=conn.createStatement();
+        Statement st= conn.createStatement();
         return st;
 
     }catch(ClassNotFoundException e){

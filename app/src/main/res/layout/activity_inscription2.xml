@@ -87,16 +87,14 @@
 
     <Button
         android:id="@+id/btn_valid"
-        android:layout_width="match_parent"
+        android:layout_width="173dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/passCheck"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#F3C94B"
-        android:textColor="#B52F6A"
         android:text="s'inscrire"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp" />
-
-
+        android:textColor="#B52F6A"
+        android:textStyle="bold" />
 
 </RelativeLayout>

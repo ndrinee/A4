@@ -55,15 +55,15 @@
         android:hint=" Mot de Passe" />
 
     <Button
-        android:id="@+id/btn_valid"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_send"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pass"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
         android:backgroundTint="#F3C94B"
-        android:textColor="#B52F6A"
         android:text="Connexion"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp" />
+        android:textColor="#B52F6A"
+        android:textStyle="bold" />
 
 </RelativeLayout>
