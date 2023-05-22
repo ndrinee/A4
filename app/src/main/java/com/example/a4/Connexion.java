@@ -2,12 +2,14 @@ package com.example.a4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.widget.Button;
 import android.widget.EditText;
 
 import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class Connexion extends AppCompatActivity {
 
@@ -26,9 +28,9 @@ public class Connexion extends AppCompatActivity {
 
         btn_send.setOnClickListener((view) -> {connexion();});
 
-        if (android.os.Build.VERSION.SDX_INT > 9){
+        if (android.os.Build.VERSION.SDK_INT > 9){
             StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.ThreadPolicy(policy);
+            //StrictMode.ThreadPolicy(policy);  //what?
         }
 
     }
@@ -37,7 +39,7 @@ public class Connexion extends AppCompatActivity {
 
         try{
             Fonction fonc = new Fonction ();
-            Statement st= fonc.connexionSQLBDD();
+            Statement st= fonc.connexionBDDSQL();
 
             String SQL="SELECT pass FROM Utilisateur WHERE pseudo='"+pseudo.getText().toString()+"'";
 
